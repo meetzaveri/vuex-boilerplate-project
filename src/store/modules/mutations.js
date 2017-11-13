@@ -1,0 +1,1 @@
+// extract mutations from store
