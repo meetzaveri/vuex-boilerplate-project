@@ -1,3 +1,4 @@
+<!-- Changing data by Mutating Actions -->
 <template>
     <div>
         <button class="btn btn-primary" @click="increment(20)">Increment</button>
