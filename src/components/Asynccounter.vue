@@ -1,3 +1,4 @@
+<!-- Changing data by Dispatching Actions -->
 <template>
     <div>
         <h2>Async Counter</h2>
