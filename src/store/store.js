@@ -7,6 +7,7 @@ export const store = new Vuex.Store({
     state:{
         counter : 0
     },
+    // Can Only Read state and returns newly formed value. Does not modifies state.
     getters :{
         doubleCounter : state =>{
             return state.counter * 2;
@@ -15,6 +16,8 @@ export const store = new Vuex.Store({
             return state.counter + 'Click';
         } 
     },
+    
+   // Does modifies state and perfect mechanism to also mutate it
    mutations :{
        increment : (state, payload) =>{
            state.counter += payload;
@@ -23,6 +26,8 @@ export const store = new Vuex.Store({
            state.counter -= payload;
        }
    },
+    
+    // Acts as an helper function but ultimately it's mutations method that does end result
    actions :{
        Asyncincrement : ({commit}, payload) =>{
            setTimeout( () =>{
